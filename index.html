@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="card-wrap">
+            <form>
+            <!-- Container holding each input group in a row -->
+            <div class="input-row">
+                <!-- Day Input -->
+                <div class="input-group">
+                    <label for="day">Day</label>
+                    <input type="text" id="day"  name="day" maxlength="2" placeholder="DD">
+                </div>
+    
+                <!-- Month Input -->
+                <div class="input-group">
+                    <label for="month">Month</label>
+                    <input type="text" id="month"   name="month" maxlength="2" placeholder="MM">
+                </div>
+    
+                <!-- Year Input -->
+                <div class="input-group">
+                    <label for="year">Year</label>
+                    <input type="text" id="year" name="year" maxlength="4" placeholder="YYYY">
+                </div >
+                
+            </div>
+            <div id="img" onclick="calculateAge()" onclick="validateInput()">
+                <img  id="scroll" src="assets/images/icon-arrow.svg" alt="#">
+            </div>
+        </form>
+        <div id="text-wrap">
+            <div class="container">
+                <div class="time-unit">
+                    <span id="dash">--</span>
+                    <span class="label">years</span>
+                </div>
+        
+                <div class="time-unit">
+                    <span id="dash3">--</span>
+                    <span class="label">months</span>
+                </div>
+        
+                <div class="time-unit">
+                    <span id="dash2">--</span>
+                    <span class="label">days</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+</body>
+</html>

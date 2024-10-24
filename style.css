@@ -1,0 +1,120 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color:  hsl(0, 0%, 86%);
+    font-family: Poppins;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+#card-wrap{
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+.input-row {
+    display: flex;
+    flex-direction: row;
+    
+    gap: 10px; /* Adds space between input groups */
+}
+
+/* Input group structure (label on top of input) */
+.input-group {
+    display: flex;
+    flex-direction: column; /* Ensures label is above the input */
+    align-items: start;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: hsl(0, 1%, 44%);
+}
+
+input {
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-radius: 5px;
+}
+form{
+    margin-left: 7%;
+    margin-top: 5%;
+    border-bottom: 1px solid hsl(0, 1%, 44%);
+    height: 130px;
+    width: 80%;
+}
+/* Adjust input widths */
+#day, #month {
+    width: 70px;
+    height: 35px;
+}
+
+#year {
+    width: 90px;
+    height: 35px;
+
+}
+#img{
+    background-color:  hsl(259, 100%, 65%);
+    height: 80px;
+    width: 80px;
+    border-radius: 90%;
+    font-size: 12px;
+   text-align: center;
+    font-size: 20px;
+    margin-left: 90%;
+    margin-top: 1%;
+    cursor: pointer;
+}
+#scroll{
+    font-size: 20px;
+    margin-top: 18%;
+}
+/* Container for time units */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Styling for each time unit (dashes and label) */
+.time-unit {
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+#text-wrap{
+    margin-left: 15%;
+    margin-top: 5%;
+}
+/* Dash styling */
+#dash , #dash2 ,#dash3{
+    color: #9C4EFF; /* Purple color for the dashes */
+    font-size: 65px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Label styling */
+.label {
+    font-size:65px;
+    font-weight: bold;
+    font-style: italic;
+    color: #000; /* Black color for the label */
+}
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
